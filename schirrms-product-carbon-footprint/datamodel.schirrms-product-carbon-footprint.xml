@@ -47,7 +47,7 @@
         <layout>DashboardLayoutOneCol</layout>
         <title/>
         <cells>
-          <cell id="0" _delta="must_exist"> <!-- Intrastructure -->
+          <cell id="0" _delta="must_exist"> <!-- Infrastructure -->
             <rank>0</rank>
             <dashlets>
               <dashlet id="151" xsi:type="DashletBadge" _delta="define">
