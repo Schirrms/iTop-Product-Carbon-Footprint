@@ -1,0 +1,16 @@
+{
+  "config": {
+    "classmap-authoritative": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Schirrms\\iTop\\Extension\\": "src"
+    }
+  },
+  "name": "schirrms/schirrms-product-carbon-footprint",
+  "type": "itop-extension",
+  "description": "Product Carbon Footprint for Models",
+  "require": {
+    "composer-runtime-api": "^2.0"
+  }
+}
