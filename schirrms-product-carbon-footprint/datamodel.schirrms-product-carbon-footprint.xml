@@ -1,10 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.6">
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.7">
   <constants>
   </constants>
   <classes>
+    <class id="Model" _delta="must_exist">
+      <properties>
+        <icon _delta="redefine">../schirrms-product-carbon-footprint/assets/img/model.svg</icon>
+      </properties>
+      <fields>
+        <field id="pcf" xsi:type="AttributeInteger" _delta="define">
+          <sql>pcf</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+      </fields>
+      <presentation>
+        <details>
+          <items>
+            <item id="pcf" _delta="define">
+              <position>45</position>
+            </item>
+          </items>
+        </details>
+        <list>
+          <items>
+            <item id="pcf" _delta="define">
+              <position>45</position>
+            </item>
+          </items>
+        </list>
+        <summary _delta="if_exists">
+          <items>
+            <item id="pcf" _delta="define">
+              <position>45</position>
+            </item>
+          </items>
+        </summary>
+      </presentation>
+    </class>
   </classes>
   <menus>
+    <menu id="ConfigManagementOverview" xsi:type="DashboardMenuNode" _delta="must_exist">
+      <rank>1</rank>
+      <parent>ConfigManagement</parent>
+      <definition>
+        <layout>DashboardLayoutOneCol</layout>
+        <title/>
+        <cells>
+          <cell id="0" _delta="must_exist"> <!-- Intrastructure -->
+            <rank>0</rank>
+            <dashlets>
+              <dashlet id="151" xsi:type="DashletBadge" _delta="define">
+                <rank>151</rank>
+                <class>Model</class>
+              </dashlet>
+            </dashlets>
+          </cell>
+        </cells>
+      </definition>
+    </menu>
   </menus>
   <user_rights>
     <groups>
